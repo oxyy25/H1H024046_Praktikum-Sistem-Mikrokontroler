@@ -55,7 +55,7 @@ void loop() {
   }
 }
 ```
- ```
+
 
 ## 1.6.4 Pertanyaan Praktikum
 
@@ -79,7 +79,47 @@ link    : https://www.tinkercad.com/things/fqY1QaodUZZ-rangkaian-schematic?share
 
 4. Program menggunakan for kembali untuk loop dari kanan ke kiri.Sekarang loop di mulai dari pin 7 sampai pin >=2.Hal ini membuat LED menyala berurutan mundur dari pin 7 sampai pin 2.
 
-5. ```
-    tunggu dulu nanti
-    ```
+5. Kode :
+```
+int timer = 500; // waktu delay (semakin besar semakin lambat)
+
+void setup() {
+
+  // Inisialisasi semua pin LED (2 sampai 7) sebagai OUTPUT
+  for (int ledPin = 2; ledPin < 8; ledPin++) {
+    pinMode(ledPin, OUTPUT); // set pin sebagai output
+  }
+
+}
+
+void loop() {
+
+  // =========================
+  // NYALAKAN LED KIRI (2,3,4)
+  // =========================
+  digitalWrite(2, HIGH); // LED kiri 1 nyala
+  digitalWrite(3, HIGH); // LED kiri 2 nyala
+  digitalWrite(4, HIGH); // LED kiri 3 nyala
+
+  digitalWrite(5, LOW);  // LED kanan mati
+  digitalWrite(6, LOW);  // LED kanan mati
+  digitalWrite(7, LOW);  // LED kanan mati
+
+  delay(timer); // tunggu
+
+  // =========================
+  // NYALAKAN LED KANAN (5,6,7)
+  // =========================
+  digitalWrite(2, LOW);  // LED kiri mati
+  digitalWrite(3, LOW);  // LED kiri mati
+  digitalWrite(4, LOW);  // LED kiri mati
+
+  digitalWrite(5, HIGH); // LED kanan 1 nyala
+  digitalWrite(6, HIGH); // LED kanan 2 nyala
+  digitalWrite(7, HIGH); // LED kanan 3 nyala
+
+  delay(timer); // tunggu
+
+}
+```
 
