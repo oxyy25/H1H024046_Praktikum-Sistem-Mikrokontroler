@@ -89,14 +89,9 @@ void setup() {
   for (int ledPin = 2; ledPin < 8; ledPin++) {
     pinMode(ledPin, OUTPUT); // set pin sebagai output
   }
-
 }
 
 void loop() {
-
-  // =========================
-  // NYALAKAN LED KIRI (2,3,4)
-  // =========================
   digitalWrite(2, HIGH); // LED kiri 1 nyala
   digitalWrite(3, HIGH); // LED kiri 2 nyala
   digitalWrite(4, HIGH); // LED kiri 3 nyala
@@ -107,9 +102,6 @@ void loop() {
 
   delay(timer); // tunggu
 
-  // =========================
-  // NYALAKAN LED KANAN (5,6,7)
-  // =========================
   digitalWrite(2, LOW);  // LED kiri mati
   digitalWrite(3, LOW);  // LED kiri mati
   digitalWrite(4, LOW);  // LED kiri mati
