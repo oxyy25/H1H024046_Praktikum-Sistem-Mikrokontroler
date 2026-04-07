@@ -13,9 +13,49 @@ Jawab   :
 2. Ketika timeDelay>100 maka akan masuk ke blok else.Program akan mengurangi timeDelay -100ms disetiap loop selama kondisi masih timeDelay >100ms.
 
 3. Memberikan jeda Waktu antara LED untuk menyala dan mati dalam satuan milidetik(ms)</p>
-4. ```
-    tunggu dulu nanti
-    ```
+4. Kode
+ ```
+const int ledPin = 6;
+
+int timeDelay = 1000;   // mulai dari lambat
+bool mempercepat = true; // arah perubahan kecepatan
+
+void setup() {
+  pinMode(ledPin, OUTPUT); // set pin LED sebagai output
+}
+
+void loop() {
+
+  // Nyalakan LED
+  digitalWrite(ledPin, HIGH); // LED ON
+  delay(timeDelay);           // tunggu sesuai kecepatan
+
+  // Matikan LED
+  digitalWrite(ledPin, LOW);  // LED OFF
+  delay(timeDelay);           // tunggu sesuai kecepatan
+
+  if (mempercepat) {
+    timeDelay -= 100; // semakin cepat
+
+    // Jika sudah paling cepat
+    if (timeDelay <= 200) {
+      mempercepat = false; // ubah arah jadi melambat
+    }
+
+  } else {
+    timeDelay += 100; // melambat (jadi sedang)
+
+    // Jika sudah kembali agak lambat (sedang)
+    if (timeDelay >= 700) {
+      
+      // MATI total (tidak berkedip lagi)
+      digitalWrite(ledPin, LOW); // pastikan LED mati
+      while (true); // berhenti di sini (program selesai)
+    }
+  }
+}
+```
+ ```
 
 ## 1.6.4 Pertanyaan Praktikum
 
