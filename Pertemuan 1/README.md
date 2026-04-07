@@ -30,7 +30,7 @@ dan berikan penjelasan disetiap baris kode nya dalam bentuk README.md!
 
 Jawab   :
 
-1. Gambar schematic :
+1. Gambar schematic : <br>
 ![gambar_schematic](Rangkaian_schematic.png)
 
 link    : https://www.tinkercad.com/things/fqY1QaodUZZ-rangkaian-schematic?sharecode=Dg_ttdRqBKpq6oZidapZf-pGvgPO2UXSGvVhIDrx1-g
