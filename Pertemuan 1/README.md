@@ -33,11 +33,13 @@ Jawab   :
 1. Gambar schematic :
 ![gambar_schematic](Rangkaian_schematic.png)
 
-2. Program menggunakan for untuk membuat efek LED dari kiri ke kanan.Loop for mulai dari pin 2 sampai pin < 8 yang setiap itearasi menyalakan LED dengan delay yang sudah di tentukan lalu mematikan kembali LED.LED dipasang secara urut dari pin 2 sampai 7 untuk membuat visual cahaya dari kiri ke kanan.
+link    : https://www.tinkercad.com/things/fqY1QaodUZZ-rangkaian-schematic?sharecode=Dg_ttdRqBKpq6oZidapZf-pGvgPO2UXSGvVhIDrx1-g
 
-3. Program menggunakan for kembali untuk loop dari kanan ke kiri.Sekarang loop di mulai dari pin 7 sampai pin >=2.Hal ini membuat LED menyala berurutan mundur dari pin 7 sampai pin 2.
+3. Program menggunakan for untuk membuat efek LED dari kiri ke kanan.Loop for mulai dari pin 2 sampai pin < 8 yang setiap itearasi menyalakan LED dengan delay yang sudah di tentukan lalu mematikan kembali LED.LED dipasang secara urut dari pin 2 sampai 7 untuk membuat visual cahaya dari kiri ke kanan.
 
-4. ```
+4. Program menggunakan for kembali untuk loop dari kanan ke kiri.Sekarang loop di mulai dari pin 7 sampai pin >=2.Hal ini membuat LED menyala berurutan mundur dari pin 7 sampai pin 2.
+
+5. ```
     tunggu dulu nanti
     ```
 
