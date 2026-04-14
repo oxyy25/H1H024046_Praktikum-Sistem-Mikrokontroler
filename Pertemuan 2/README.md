@@ -87,7 +87,7 @@ Jawab   :
 
 3. dari sisi hardware : kabel jumper yang menghubungkan pin digital dan seven segment tidak terpasang dengan sempurna atau kabel jumper rusak.Bisa juga karena salah satu LED pada seven segment mengalami kerusakan.
 
-dari sisi software  : Lupa mengantur pin yang akan di gunakan menggunakan pinmode(). atau bisa juga urutan deklarasi pin pada segmentPins[] tidak sesuai urutan kabel yang terpasang.
+dari sisi software  : Lupa mengantur pin yang akan di gunakan menggunakan pinmode( ). atau bisa juga urutan deklarasi pin pada segmentPins[ ] tidak sesuai urutan kabel yang terpasang.
 
 4.  Kode    : ini belum bener
 ```
