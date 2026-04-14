@@ -82,11 +82,10 @@ void loop()
 Jawab   :
 
 1. https://www.tinkercad.com/things/hvRydhFMAKi-push-button-7-segment?sharecode=DtekXoD9eg0xFlhC2cjuxwnNruDPqdSRHDGoFB_ZWVw
-   ![Gambar_Schematic](Rankaian Schematic/Rangkaian Schematic 2A.png)
 
-3. Jika menggunakan mode INPUT biasa tanpa menambahkan resistor eksternal, pin Arduino akan berada dalam kondisi floating (mengambang) saat tombol tidak ditekan.Saat dalam kondisi mengambang,pin sangat sensitif terhadap gangguan elektrik.
+2. Jika menggunakan mode INPUT biasa tanpa menambahkan resistor eksternal, pin Arduino akan berada dalam kondisi floating (mengambang) saat tombol tidak ditekan.Saat dalam kondisi mengambang,pin sangat sensitif terhadap gangguan elektrik.
 
-4. dari sisi hardware : kabel jumper yang menghubungkan pin digital dan seven segment tidak terpasang dengan sempurna atau kabel jumper rusak.Bisa juga karena salah satu LED pada seven segment mengalami kerusakan.
+3. dari sisi hardware : kabel jumper yang menghubungkan pin digital dan seven segment tidak terpasang dengan sempurna atau kabel jumper rusak.Bisa juga karena salah satu LED pada seven segment mengalami kerusakan.
 
 dari sisi software  : Lupa mengantur pin yang akan di gunakan menggunakan pinmode( ). atau bisa juga urutan deklarasi pin pada segmentPins[ ] tidak sesuai urutan kabel yang terpasang.
 
